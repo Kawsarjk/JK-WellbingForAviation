@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Burned Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="calories-tracker.css">
+</head>
+<body>
+
+    <header class="text-center">
+        <h1>Calories Burned Calculator</h1>
+    </header>
+
+    <div class="container my-5">
+        <form id="calories-form" class="form-inline justify-content-center">
+            <div class="form-group mb-2">
+                <label for="activity-select" class="sr-only">Activity</label>
+                <select id="activity-select" class="form-control">
+                    <option value="Walking: moderate">Walking: moderate</option>
+                    <option value="Running: 6 mph">Running: 6 mph</option>
+                    <option value="Cycling: 12-14 mph">Cycling: 12-14 mph</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Jumping rope">Jumping rope</option>
+                <option value="Hiking">Hiking</option>
+                <option value="Dancing">Dancing</option>
+                <option value="Rowing: moderate">Rowing: moderate</option>
+                <option value="Weightlifting: vigorous">Weightlifting: vigorous</option>
+                <option value="Tennis: singles">Tennis: singles</option>
+                <option value="Basketball: game">Basketball: game</option>
+                <option value="Elliptical trainer">Elliptical trainer</option>
+                <option value="Skiing: downhill">Skiing: downhill</option>
+                <option value="Boxing: sparring">Boxing: sparring</option>
+                <option value="Soccer: game">Soccer: game</option>
+                </select>
+            </div>
+            <div class="form-group mb-2 ml-2">
+                <label for="weight-input" class="sr-only">Weight</label>
+                <input type="number" class="form-control" id="weight-input" placeholder="Weight (kg)" required>
+            </div>
+            <div class="form-group mb-2 ml-2">
+                <label for="hours-input" class="sr-only">Hours</label>
+                <input type="number" class="form-control" id="hours-input" placeholder="Hours" min="0" required>
+            </div>
+            <div class="form-group mb-2 ml-2">
+                <label for="minutes-input" class="sr-only">Minutes</label>
+                <input type="number" class="form-control" id="minutes-input" placeholder="Minutes" min="0" max="59" required>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 ml-2">Calculate</button>
+        </form>
+
+        <!-- Results -->
+        <div id="results" class="mt-4 text-center">
+            
+        </div>
+    </div>
+
+    <!--  Images -->
+    <div class="container decorative-images">
+        <img src="images/exercise1.jpeg" alt="Exercise Image 1">
+        <img src="images/exercise2.jpeg" alt="Exercise Image 2">
+        <img src="images/exercise3.webp" alt="Exercise Image 3">
+        <img src="images/exercise4.jpg" alt="Exercise Image 4">
+        <img src="images/exercise5.webp" alt="Exercise Image 5">
+        <img src="images/exercise6.avif" alt="Exercise Image 6">
+        
+    </div>
+
+         <!--  Home Button -->
+<div class="text-center mt-4">
+    <a href="index.html" class="back-home-btn">Home</a>
+</div>
+
+   
+    <script src="calories-tracker.js"></script>
+</body>
+</html>

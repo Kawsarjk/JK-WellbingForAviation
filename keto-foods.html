@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keto Foods</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="keto-foods.css">
+</head>
+<body>
+
+    <header class="text-center">
+        <h1>Find Common Keto Foods in Your Country</h1>
+    </header>
+
+    <!-- Decorative Images -->
+    <div class="container decorative-images">
+        <img src="images/keto1.jpg" alt="Keto Image 1">
+        <img src="images/keto2.jpg" alt="Keto Image 2">
+        <img src="images/keto3.jpg" alt="Keto Image 3">
+        <img src="images/keto4.jpg" alt="Keto Image 4">
+        <img src="images/keto5.jpg" alt="Keto Image 5">
+    </div>
+
+    <div class="container my-5">
+        <form id="keto-form" class="form-inline justify-content-center">
+            <div class="form-group mb-2">
+                <label for="country-input" class="sr-only">Country</label>
+                <input list="countries-list" type="text" class="form-control" id="country-input" placeholder="Enter your country" required>
+                <datalist id="countries-list">
+                    
+                </datalist>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 ml-2">Search</button>
+        </form>
+
+        
+        <div id="results" class="mt-4 text-center">
+            
+        </div>
+    </div>
+
+    
+    <div class="container quote-container">
+        <p>"Eating keto is not just a diet, it's a way of living that nourishes both body and mind."</p>
+    </div>
+
+        
+<div class="text-center mt-4">
+    <a href="index.html" class="back-home-btn">Home</a>
+</div>
+
+    
+    <script src="keto-foods.js"></script>
+</body>
+</html>

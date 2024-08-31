@@ -1,0 +1,119 @@
+
+.meditation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    background-color: #fcf7fa; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.meditation-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    margin-right: 20px;
+}
+
+
+.meditation-details {
+    max-width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.meditation-details h2 {
+    color: #79004d;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.meditation-details p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-size: 1.3em; 
+}
+
+
+.regenerate-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#regenerate-button {
+    background-color: transparent;
+    color: #790047;
+    border: 2px solid #79003b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#regenerate-button:hover {
+    background-color: #790051;
+    color: white;
+}
+
+
+.quotes-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fcf7fa;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4em;
+    color: #555;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .meditation-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .meditation-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+
+    .meditation-details {
+        max-width: 100%;
+    }
+}
+
+
+
+
+.back-home-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #000; 
+    background-color: #fff; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.back-home-btn:hover {
+    background-color: #f1f1f1; /* Slightly darker white on hover */
+    color: #000; /* Keep the text color black */
+    text-decoration: none; /* Ensure no underline on hover */
+}
